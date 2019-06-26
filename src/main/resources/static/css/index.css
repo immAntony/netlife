@@ -1,0 +1,50 @@
+.level1{
+	border-radius: 25px;
+}
+html,body{
+	width: 100%;
+	background: #fffae8;
+}
+.marginTop-xs{
+	margin-top: 10px;
+}
+.marginTop-sm{
+	margin-top: 20px;
+}
+.head-img{
+	width: 100%;
+	height: 100%;
+}
+
+.form-box{
+	overflow: hidden;
+}
+.input-box{
+	width: 100%;
+	background-image: url(../img/input-bg.png);
+	background-size: 100% 100%;
+}
+.form{
+	overflow: hidden;
+}
+.input-item{
+	margin-top: 10px;
+	height: 40px;
+	border-bottom:1px solid #e8dfc4;
+}
+.content-box{
+	height: 200px;
+	background: url(../img/content-bg.png) no-repeat;
+	background-size: 100% 100%;
+overflow: hidden;
+}
+.title-img{
+	width: 48px;
+	height: 23px;
+}
+.title{
+	text-align: center;
+}
+.desc{
+	padding: 0 30px;
+}
