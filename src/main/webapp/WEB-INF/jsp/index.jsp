@@ -123,6 +123,7 @@
         </div>
     </div>
 </div>
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/axios/0.19.0/axios.js"></script>
 <script src="js/index.js" type="text/javascript" charset="utf-8"></script>

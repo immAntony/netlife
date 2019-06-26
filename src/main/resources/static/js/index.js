@@ -14,7 +14,8 @@ var app = new Vue({
 	methods: {
 		sendId: function(options) {
 			var that = this;
-			axios({
+			$.ajax({
+				url: "http://localhost:8081/feature?idCard=" + options,
 				headers: {
 					'Content-Type': 'application/json; charset=UTF-8',
 					'Access-Control-Allow-Origin': '*',
@@ -22,16 +23,30 @@ var app = new Vue({
 					"Access-Control-Allow-Headers": "X-Requested-With,Content-Type"
 				}, //设置跨域请求头
 				method: 'post',
-				url: "http://localhost:8080/feature?idCard=" + options,
-				data: {
-					idCard: options,
-				},
-			}).then(function(res) {
-				that.level1 = res.data.level1;
-				that.level = res.data;
-
-				console.log(that.level1)
+				success: function(result) {
+					console.log(result)
+					that.level1 = result.level1;
+					that.level = result;
+				}
 			});
+			// axios({
+			// 	headers: {
+			// 		'Content-Type': 'application/json; charset=UTF-8',
+			// 		'Access-Control-Allow-Origin': '*',
+			// 		"Access-Control-Allow-Methods": "PUT,POST,GET,DELETE,OPTIONS",
+			// 		"Access-Control-Allow-Headers": "X-Requested-With,Content-Type"
+			// 	}, //设置跨域请求头
+			// 	method: 'post',
+			// 	url: "http://localhost:8080/feature?idCard=" + options,
+			// 	data: {
+			// 		idCard: options,
+			// 	},
+			// }).then(function(res) {
+			// 	that.level1 = res.data.level1;
+			// 	that.level = res.data;
+			//
+			// 	console.log(that.level1)
+			// });
 		},
 		getLevel2: function(options){
 			var that = this;
