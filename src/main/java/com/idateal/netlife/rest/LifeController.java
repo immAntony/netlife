@@ -14,6 +14,7 @@ import java.util.Map;
  */
 @Controller
 @CrossOrigin
+//@RestController
 public class LifeController {
 
     @PostMapping("feature")
@@ -35,5 +36,10 @@ public class LifeController {
         System.out.println("test");
         return "index";
     }
-
+    @GetMapping("hello")
+    @ResponseBody
+    public String hello(){
+        System.out.println("test");
+        return "index";
+    }
 }

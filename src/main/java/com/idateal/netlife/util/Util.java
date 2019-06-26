@@ -46,9 +46,14 @@ public class Util {
      */
     public static Integer getLevel3(String idCard){
         Integer birth = Integer.parseInt(idCard.substring(6,14));
-        while (birth>9){
-            birth = birth/10%10+birth%10;
+        Integer sum  = 0;
+        while(birth != 0){
+            sum = sum + birth%10;
+            birth = birth/10;
         }
-        return birth;
+        while (sum>9){
+            sum = sum/10%10+sum%10;
+        }
+        return sum;
     }
 }
