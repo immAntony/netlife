@@ -97,6 +97,7 @@ public class Util {
         System.out.println("相差"+rang);
         //算今日当令的index
         int index = Integer.parseInt(day)-1+rang;
+        System.out.println(index+"*****"+"今日当令："+day);
         if (index>meet.length){
             index  = index-9;
         }

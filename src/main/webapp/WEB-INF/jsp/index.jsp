@@ -28,13 +28,13 @@
         <div class="col-md-12 form-box">
             <form action="" class="form-horizontal form input-box">
                 <div class="form-group has-success input-item">
-                    <label class=" col-xs-4 col-md-4 control-label text-right" for="name">您的姓名:</label>
+                    <label class=" col-xs-4 col-md-4 control-label text-right" for="name" style="line-height: 35px;">您的姓名:</label>
                     <div class="col-xs-8 col-md-8">
                         <input type="text" name="name" v-model="name" id="name" class="form-control" placeholder="请输入姓名" />
                     </div>
                 </div>
                 <div class="form-group has-success input-item">
-                    <label class=" col-xs-4 col-md-4 control-label text-right" for="sex">您的性别:</label>
+                    <label class=" col-xs-4 col-md-4 control-label text-right" for="sex" style="line-height: 35px;">您的性别:</label>
                     <div class="col-xs-8 col-md-8">
                         <label class="radio-inline">
                             <input type="radio" name="sex" id="man" value="man"> 男
@@ -45,7 +45,7 @@
                     </div>
                 </div>
                 <div class="form-group has-success input-item">
-                    <label class=" col-xs-4 col-md-4 control-label text-right" for="name">身份证号:</label>
+                    <label class=" col-xs-4 col-md-4 control-label text-right" for="name" style="line-height: 35px;">身份证号:</label>
                     <div class="col-xs-8 col-md-8">
                         <input type="number" name="idcard" v-model="idcard" id="idcard" class="form-control" placeholder="请输入身份证号" />
                     </div>
